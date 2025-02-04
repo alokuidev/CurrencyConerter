@@ -1,0 +1,45 @@
+body {
+  background: linear-gradient(to right, #001f3f, #002f6c);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.converter {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+input, select, button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+input {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-align: center;
+}
+select {
+  background: rgba(255, 255, 255, 0.3);
+}
+button {
+  background: blue;
+  color: white;
+  cursor: pointer;
+}
+.swap {
+  background: white;
+  color: black;
+  width: auto;
+  padding: 5px 15px;
+  cursor: pointer;
+}
