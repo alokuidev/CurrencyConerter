@@ -20,7 +20,9 @@ function InputBox({
         placeholder="0"
         disabled={amountDisable}
         value={amount}
-        onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))}
+        onChange={(e) =>
+          onAmountChange && onAmountChange(Number(e.target.value))
+        }
       />
       <select
         value={selectedCurrency}

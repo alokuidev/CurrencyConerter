@@ -10,7 +10,6 @@ function App() {
 
   const currencyInfo = useCurrencyInfo(from);
   const options = Object.keys(currencyInfo);
-
   const swap = () => {
     setFrom(to);
     setTo(from);
@@ -40,7 +39,9 @@ function App() {
         onCurrencyChange={(currency) => setTo(currency)}
         selectedCurrency={to}
       />
-      <button onClick={convert}>{`Convert ${from.toUpperCase()} to ${to.toUpperCase()}`}</button>
+      <button
+        onClick={convert}
+      >{`Convert ${from.toUpperCase()} to ${to.toUpperCase()}`}</button>
     </div>
   );
 }

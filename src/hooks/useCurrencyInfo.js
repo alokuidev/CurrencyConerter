@@ -11,7 +11,7 @@ function useCurrencyInfo(currency) {
       })
       .catch((error) => console.error("Error fetching currency data:", error));
   }, [currency]); // ✅ Add `currency` as a dependency
-
+  console.table(data);
   return data;
 }
 
